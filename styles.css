@@ -1,0 +1,104 @@
+body {
+  margin: 20px;
+  /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+  width: 130px;
+  border-radius: 8px;
+}
+
+.text {
+  animation: inherit;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: hsl(324, 70%, 45%);
+  animation: change-color 10s infinite;
+  background-color: currentColor;
+  border-bottom: 15px solid currentColor;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+@supports (background-blend-mode: overlay) {
+  .card {
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    background-blend-mode: overlay;
+  }
+}
+
+@keyframes change-color {
+  from,
+  to {
+    color: hsl(324, 70%, 45%);
+  }
+  10% {
+    color: hsl(360, 65%, 45%);
+  }
+  20% {
+    color: hsl(36, 80%, 45%);
+  }
+  30% {
+    color: hsl(72, 75%, 35%);
+  }
+  40% {
+    color: hsl(108, 65%, 35%);
+  }
+  50% {
+    color: hsl(144, 75%, 35%);
+  }
+  60% {
+    color: hsl(180, 75%, 35%);
+  }
+  70% {
+    color: hsl(216, 60%, 45%);
+  }
+  80% {
+    color: hsl(252, 65%, 50%);
+  }
+  90% {
+    color: hsl(288, 60%, 40%);
+  }
+}
+
+.text {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0px 10px;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.border-blue {
+  border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
